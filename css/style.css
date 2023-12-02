@@ -1,0 +1,31 @@
+:root {
+    --onyx: #343e3dff;
+    --tiffany-blue: #99d5c9ff;
+    --pumpkin: #f5853fff;
+    --mountbatten-pink: #ad7a99ff;
+    --cordovan: #8e3b46ff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--onyx);
+}
+
+.top-nav {
+    background-color:var(--cordovan);
+    display:flex;
+    justify-content: center;
+}
+
+.top-nav > a, span {
+    text-decoration: none;
+    color: var(--tiffany-blue);
+    padding: 1rem 1.5rem;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.top-nav > a {
+    font-weight: 700;
+    color: var(--pumpkin);
+}
