@@ -41,10 +41,19 @@ body {
     padding: 1rem;
 }
 
-.flex-row {
+.flex-col {
     display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    /* padding: 1rem; */
+    gap: 1rem;
+}
+
+.flex-row {
+    display:flex;
     flex-direction: row;
-    width: 33%;
+    gap: 1rem;
+    padding:1rem;
 }
 
 .card {
@@ -60,4 +69,18 @@ body {
 .title {
     color: var(--pumpkin);
     font-weight: 400;
+}
+
+.subtitle {
+    color: var(--tiffany-blue);
+    font-weight: 300;
+    font-size: 2rem;
+    margin-left: auto;
+}
+
+.info {
+    display:flex;
+    align-items: center;
+    width:100%;
+    justify-content: space-between;
 }
