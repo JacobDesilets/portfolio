@@ -4,6 +4,8 @@
     --pumpkin: #f5853fff;
     --mountbatten-pink: #ad7a99ff;
     --cordovan: #8e3b46ff;
+
+    --rounded-corner: 30px;
 }
 
 body {
@@ -28,4 +30,34 @@ body {
 .top-nav > a {
     font-weight: 700;
     color: var(--pumpkin);
+}
+
+.grid-container {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns:repeat(3, 1fr);
+    row-gap: 1rem;
+    column-gap: 1rem;
+    padding: 1rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    width: 33%;
+}
+
+.card {
+    display: flex;
+    /* border-radius: var(--rounded-corner); */
+    background: var(--cordovan);
+    flex-direction: column;
+    justify-self:center;
+    transition: 0.15s;
+    overflow: hidden;
+}
+
+.title {
+    color: var(--pumpkin);
+    font-weight: 400;
 }
