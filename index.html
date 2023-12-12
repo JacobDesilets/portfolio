@@ -1,5 +1,8 @@
+<!-- LOOK HERE FOR MODAL STUFF https://github.com/ericyork/eg_media_gallery/blob/master/index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +10,7 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="css/modnorm.min.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
@@ -17,11 +20,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet" href="css/style.css">
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js" integrity="sha512-bcfltY+lNLlNxz38yBBm/HLaUB1gTV6I0e+fahbF9pS6roIdzUytozWdnFV8ZnM6cSAG5EbmO0ag0a/fLZSG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 </head>
+
 <body>
     <!-- <div id="canvas"></div> -->
     <section>
@@ -34,47 +41,167 @@
         <div class="flex-row">
             <div class="flex-col">
                 <div class="card">
-                    <a href='media/DA200_Project1_JacobDesilets.jpg'><img src="media/DA200_Project1_JacobDesilets.jpg"></a>
+                    <img src="media/DA200_Project1_JacobDesilets.jpg">
                     <div class='info'>
                         <span class="title">DA200 Project 1</span>
                         <span class="subtitle">3D Render</span>
+                        <button class="more-btn" onclick="showModal(0);"><span class="material-symbols-outlined">
+                                open_in_full
+                        </span></button>
                     </div>
                 </div>
                 <div class="card">
-                    <a href='media/DA322_final1.png'><img src="media/DA322_final1.png"></a>
+                    <img src="media/DA322_final1.png">
                     <div class='info'>
                         <span class="title">DA322 Final Project</span>
-                        <span class="subtitle">Edited Photo</span>
+                        <span class="subtitle">Photo</span>
+                        <button class="more-btn" onclick="showModal(1);"><span class="material-symbols-outlined">
+                            open_in_full
+                        </span></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/164.jpg">
+                    <div class='info'>
+                        <span class="title">DA322 Assignment</span>
+                        <span class="subtitle">Photo</span>
+                        <button class="more-btn" onclick="showModal(2);"><span class="material-symbols-outlined">
+                            open_in_full
+                        </span></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/DA250_Project2.png">
+                    <div class='info'>
+                        <span class="title">DA250 Project 2</span>
+                        <span class="subtitle">Interactive Art</span>
+                        <button class="more-btn" onclick="showModal(10);"><span class="material-symbols-outlined">
+                            open_in_full
+                        </span></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/DA322_final2.png">
+                    <div class='info'>
+                        <span class="title">DA322 Final Project</span>
+                        <span class="subtitle">Photo</span>
+                        <button class="more-btn" onclick="showModal(13);"><span class="material-symbols-outlined">
+                            open_in_full
+                        </span></button>
                     </div>
                 </div>
             </div>
             <div class="flex-col">
                 <div class="card">
-                    <a href='media/DA300_project1'><img src="media/da300_project1.png"></a>
+                    <img src="media/da300_project1.png">
                     <div class='info'>
                         <span class="title">DA300 Project 1</span>
                         <span class="subtitle">3D Render</span>
+                        <button class="more-btn" onclick="showModal(3);"><span class="material-symbols-outlined">
+                            open_in_full
+                        </span></button>
                     </div>
                 </div>
                 <div class="card">
-                    <a href='https://codepen.io/Jacob-Desilets/full/XWoeRPz'><img src="media/DA250_Project1.png"></a>
+                    <img src="media/DA250_Project1.png">
                     <div class='info'>
                         <span class="title">DA250 Project 1</span>
-                        <span class="subtitle">Interactive Art (p5.js)</span>
+                        <span class="subtitle">Interactive Art</span>
+                        <button class="more-btn" onclick="showModal(4);"><span class="material-symbols-outlined">
+                            open_in_full
+                        </span></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/da200_a2.jpg">
+                    <div class='info'>
+                        <span class="title">DA200 Assignment</span>
+                        <span class="subtitle">3D Render</span>
+                        <button class="more-btn" onclick="showModal(5);"><span class="material-symbols-outlined">
+                            open_in_full
+                        </span></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/DA200_final.png">
+                    <div class='info'>
+                        <span class="title">DA200 Final (Group Project)</span>
+                        <span class="subtitle">3D Animated Short</span>
+                        <button class="more-btn" onclick="showModal(8);"><span class="material-symbols-outlined">
+                            open_in_full
+                        </span></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/COMM329_Game.png">
+                    <div class='info'>
+                        <span class="title">COMM329 Rock Paper Scissors Project</span>
+                        <span class="subtitle">Website</span>
+                        <button class="more-btn" onclick="showModal(12);"><span class="material-symbols-outlined">
+                            open_in_full
+                        </span></button>
                     </div>
                 </div>
             </div>
             <div class="flex-col">
                 <div class="card">
-                    <a href='media/DA322_humanfigure.png'><img src="media/DA322_humanfigure.png"></a>
+                    <img src="media/DA322_humanfigure.png">
                     <div class='info'>
                         <span class="title">DA322 Human Figures Project</span>
                         <span class="subtitle">Photo</span>
+                        <button class="more-btn" onclick="showModal(6);"><span class="material-symbols-outlined">
+                            open_in_full
+                        </span></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/DA140_Final.png">
+                    <div class='info'>
+                        <span class="title">DA140 Final Project</span>
+                        <span class="subtitle">Game</span>
+                        <button class="more-btn" onclick="showModal(7);"><span class="material-symbols-outlined">
+                            open_in_full
+                        </span></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/DA140_Group_Project.png">
+                    <div class='info'>
+                        <span class="title">DA140 Group Project</span>
+                        <span class="subtitle">Game</span>
+                        <button class="more-btn" onclick="showModal(9);"><span class="material-symbols-outlined">
+                            open_in_full
+                        </span></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/COMM329_Final.png">
+                    <div class='info'>
+                        <span class="title">COMM329 Final Project (this website)</span>
+                        <span class="subtitle">Website</span>
+                        <button class="more-btn" onclick="showModal(11);"><span class="material-symbols-outlined">
+                            open_in_full
+                        </span></button>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                
+                <img id="modal-img" class="modal-img">
+                <div class='flex-col'>
+                    <p id="modal-txt"></p>
+                    <a id="modal-src" class="view-src">Image Source</a>
+                </div>
+                <span class="material-symbols-outlined close">
+                    close
+                </span>
+            </div>
+
+        </div>
     </section>
 
+    <script src="js/modal.js"></script>
     <!-- <script src="js/metaballs.js"></script> -->
 </body>
