@@ -19,6 +19,7 @@ let imgSources = [
     'media/COMM329_Final.png',                  // 11
     'media/COMM329_Game.png',                   // 12
     'media/DA322_final2.png',                   // 13
+    'media/DA250_Project3.png',                 // 14
 ];
 
 let modalDescriptions = [
@@ -35,7 +36,8 @@ let modalDescriptions = [
     'Made using Made using the p5.js Javascript library and WebGL on CodePen. View on CodePen <a href="https://codepen.io/Jacob-Desilets/full/ZEVdLEm">here</a>',
     'Made using HTML, CSS, and Javascript. This project was both a portfolio for my Digital Arts minor and the final project for Front-end Web Design. View the source code <a href="https://github.com/JacobDesilets/portfolio">here</a>',
     'Made using HTML, CSS, and Javascript. This project is a simple Rock Paper Scissors game that the user can play against the computer. Visit the website <a href="https://jacobdesilets.com/rps/">here</a>. View the source code <a href="https://github.com/JacobDesilets/rps">here</a>',
-    'Made using a camera borrowed from the school and Photoshop. This was one out of three images submitted for my Photography final'
+    'Made using a camera borrowed from the school and Photoshop. This was one out of three images submitted for my Photography final',
+    'Made using Houdini. Inspired by the HBO animated show Scavenger\'s Reign',
 ]
 
 function showModal(idx) {
